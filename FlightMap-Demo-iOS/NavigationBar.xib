@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NavigationBar" customModule="FlightMap_Demo_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="618" height="143"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Zg-Wn-oe2">
+                    <rect key="frame" x="0.0" y="0.0" width="618" height="143"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ov1-nW-Dng">
+                            <rect key="frame" x="0.0" y="0.0" width="618" height="143"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWc-sb-4Nf">
+                                    <rect key="frame" x="0.0" y="56.5" width="107" height="30"/>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navigation Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMJ-9a-g3B">
+                                    <rect key="frame" x="127" y="61" width="311" height="21"/>
+                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pc-p1-gob">
+                                    <rect key="frame" x="458" y="56.5" width="160" height="30"/>
+                                    <state key="normal" title="Button"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Ov1-nW-Dng" firstAttribute="top" secondItem="4Zg-Wn-oe2" secondAttribute="top" id="6e5-4Z-ON7"/>
+                        <constraint firstAttribute="trailing" secondItem="Ov1-nW-Dng" secondAttribute="trailing" id="VNw-D6-dWI"/>
+                        <constraint firstItem="Ov1-nW-Dng" firstAttribute="leading" secondItem="4Zg-Wn-oe2" secondAttribute="leading" id="kSs-Zq-vmp"/>
+                        <constraint firstAttribute="bottom" secondItem="Ov1-nW-Dng" secondAttribute="bottom" id="oi3-9a-evT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4Zg-Wn-oe2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Dwd-41-wdR"/>
+                <constraint firstItem="4Zg-Wn-oe2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NHv-Gi-w3K"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4Zg-Wn-oe2" secondAttribute="trailing" id="W1r-n4-s3k"/>
+                <constraint firstItem="4Zg-Wn-oe2" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="g1p-7B-Tig"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="leftBarButton" destination="HWc-sb-4Nf" id="f3x-qi-1nO"/>
+                <outlet property="navigationTitle" destination="fMJ-9a-g3B" id="3PC-y1-3vH"/>
+                <outlet property="rightBarButton" destination="1pc-p1-gob" id="UTR-QB-dGa"/>
+                <outlet property="view" destination="4Zg-Wn-oe2" id="MjF-3F-02O"/>
+            </connections>
+            <point key="canvasLocation" x="3.75" y="34.375"/>
+        </view>
+    </objects>
+</document>
