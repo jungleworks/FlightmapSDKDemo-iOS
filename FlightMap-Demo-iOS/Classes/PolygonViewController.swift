@@ -38,7 +38,6 @@ class PolygonViewController: UIViewController {
 
     private func setupMapView() {
         /// Initialize mapview with along with frame and style URL
-        MGLAccountManager.accessToken = FLIGHTMAP.dummyToken
         mapView = MGLMapView(frame: self.view.bounds, styleURL: FLIGHTMAP.lightTheme)
 
         /// Set camera at a specific lat long along with zoom and animation

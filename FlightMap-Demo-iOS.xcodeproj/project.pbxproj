@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EC331C8524A46A670094EBE2 /* CustomInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C8424A46A670094EBE2 /* CustomInfoViewController.swift */; };
+		EC331C8724A47EA60094EBE2 /* CustomULViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C8624A47EA60094EBE2 /* CustomULViewController.swift */; };
+		EC331C8A24A48C120094EBE2 /* MarkerRotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C8924A48C120094EBE2 /* MarkerRotationViewController.swift */; };
+		EC331C8C24A49BB50094EBE2 /* TrackingModesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C8B24A49BB50094EBE2 /* TrackingModesViewController.swift */; };
 		EC606C3124A078B9009A49BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC606C3024A078B9009A49BF /* AppDelegate.swift */; };
 		EC606C3324A078B9009A49BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC606C3224A078B9009A49BF /* SceneDelegate.swift */; };
 		EC606C3824A078B9009A49BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC606C3624A078B9009A49BF /* Main.storyboard */; };
@@ -20,8 +23,6 @@
 		EC606C4D24A0C85D009A49BF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC606C4C24A0C85D009A49BF /* LoginViewController.swift */; };
 		EC606C4F24A0D35B009A49BF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC606C4E24A0D35B009A49BF /* Constants.swift */; };
 		EC606C5124A0DB1B009A49BF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC606C5024A0DB1B009A49BF /* HomeViewController.swift */; };
-		EC606C5324A0DC14009A49BF /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC606C5224A0DC14009A49BF /* NavigationBar.xib */; };
-		EC606C5724A0DC62009A49BF /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC606C5624A0DC62009A49BF /* NavigationBar.swift */; };
 		EC7D47AB24A1BD8F00C22E72 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D47AA24A1BD8F00C22E72 /* Extensions.swift */; };
 		EC7D47AE24A1C8FA00C22E72 /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7D47AD24A1C8FA00C22E72 /* HomeViewPresenter.swift */; };
 		EC7D47B124A1D70E00C22E72 /* HomeSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7D47B024A1D70E00C22E72 /* HomeSectionHeader.xib */; };
@@ -57,6 +58,9 @@
 
 /* Begin PBXFileReference section */
 		EC331C8424A46A670094EBE2 /* CustomInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInfoViewController.swift; sourceTree = "<group>"; };
+		EC331C8624A47EA60094EBE2 /* CustomULViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomULViewController.swift; sourceTree = "<group>"; };
+		EC331C8924A48C120094EBE2 /* MarkerRotationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerRotationViewController.swift; sourceTree = "<group>"; };
+		EC331C8B24A49BB50094EBE2 /* TrackingModesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingModesViewController.swift; sourceTree = "<group>"; };
 		EC606C2D24A078B9009A49BF /* FlightMap-Demo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FlightMap-Demo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC606C3024A078B9009A49BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC606C3224A078B9009A49BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,8 +73,6 @@
 		EC606C4C24A0C85D009A49BF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC606C4E24A0D35B009A49BF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EC606C5024A0DB1B009A49BF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		EC606C5224A0DC14009A49BF /* NavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
-		EC606C5624A0DC62009A49BF /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		EC7D47AA24A1BD8F00C22E72 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EC7D47AD24A1C8FA00C22E72 /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
 		EC7D47B024A1D70E00C22E72 /* HomeSectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSectionHeader.xib; sourceTree = "<group>"; };
@@ -102,6 +104,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC175A4424A5E71E0003BE88 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				EC606C3024A078B9009A49BF /* AppDelegate.swift */,
+				EC606C3224A078B9009A49BF /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		EC331C8824A487D70094EBE2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				EC606C4E24A0D35B009A49BF /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		EC606C2424A078B8009A49BF = {
 			isa = PBXGroup;
 			children = (
@@ -122,22 +141,19 @@
 		EC606C2F24A078B9009A49BF /* FlightMap-Demo-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EC175A4424A5E71E0003BE88 /* AppDelegate */,
+				EC331C8824A487D70094EBE2 /* Constants */,
 				EC7D47C224A21ACC00C22E72 /* Extensions */,
 				EC7D47BF24A21A1B00C22E72 /* Classes */,
-				EC606C3024A078B9009A49BF /* AppDelegate.swift */,
-				EC606C3224A078B9009A49BF /* SceneDelegate.swift */,
 				EC606C4C24A0C85D009A49BF /* LoginViewController.swift */,
 				EC7D47AF24A1D6F700C22E72 /* SectionHeaders */,
-				EC606C4E24A0D35B009A49BF /* Constants.swift */,
 				EC7D47AC24A1C8D000C22E72 /* HomeViewController */,
-				EC606C5624A0DC62009A49BF /* NavigationBar.swift */,
 				EC606C3624A078B9009A49BF /* Main.storyboard */,
 				ECEF1A1924A34A1E001629C6 /* example.geojson */,
 				ECEF1A1724A33DE6001629C6 /* dc-metro.geojson */,
 				EC606C3924A078BB009A49BF /* Assets.xcassets */,
 				EC606C3B24A078BB009A49BF /* LaunchScreen.storyboard */,
 				EC606C3E24A078BB009A49BF /* Info.plist */,
-				EC606C5224A0DC14009A49BF /* NavigationBar.xib */,
 				EC7D47B524A1DA1100C22E72 /* TableViewCell */,
 			);
 			path = "FlightMap-Demo-iOS";
@@ -191,6 +207,9 @@
 				ECEF1A1524A33BD7001629C6 /* GeoJsonViewController.swift */,
 				ECEF1A1D24A37020001629C6 /* CameraAnimationViewController.swift */,
 				EC331C8424A46A670094EBE2 /* CustomInfoViewController.swift */,
+				EC331C8B24A49BB50094EBE2 /* TrackingModesViewController.swift */,
+				EC331C8624A47EA60094EBE2 /* CustomULViewController.swift */,
+				EC331C8924A48C120094EBE2 /* MarkerRotationViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -269,7 +288,6 @@
 				EC7D47B124A1D70E00C22E72 /* HomeSectionHeader.xib in Resources */,
 				EC7D47B924A1DA4200C22E72 /* HomeTableViewCell.xib in Resources */,
 				ECEF1A1A24A34A1E001629C6 /* example.geojson in Resources */,
-				EC606C5324A0DC14009A49BF /* NavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,14 +308,16 @@
 				EC7D47B324A1D75C00C22E72 /* HomeSectionHeader.swift in Sources */,
 				EC606C4F24A0D35B009A49BF /* Constants.swift in Sources */,
 				ECEF1A0F24A31B0B001629C6 /* InfoWindowViewController.swift in Sources */,
+				EC331C8A24A48C120094EBE2 /* MarkerRotationViewController.swift in Sources */,
 				ECEF1A1C24A36669001629C6 /* DynamicMarkerViewController.swift in Sources */,
 				EC7D47B824A1DA4200C22E72 /* HomeTableViewCell.swift in Sources */,
 				ECEF1A1624A33BD7001629C6 /* GeoJsonViewController.swift in Sources */,
-				EC606C5724A0DC62009A49BF /* NavigationBar.swift in Sources */,
+				EC331C8724A47EA60094EBE2 /* CustomULViewController.swift in Sources */,
 				ECEF1A1424A32FEE001629C6 /* PolygonViewController.swift in Sources */,
 				EC7D47AE24A1C8FA00C22E72 /* HomeViewPresenter.swift in Sources */,
 				EC7D47C424A2245F00C22E72 /* TapMarkerViewController.swift in Sources */,
 				ECEF1A1E24A37020001629C6 /* CameraAnimationViewController.swift in Sources */,
+				EC331C8C24A49BB50094EBE2 /* TrackingModesViewController.swift in Sources */,
 				EC7D47AB24A1BD8F00C22E72 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

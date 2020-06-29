@@ -44,6 +44,12 @@ struct TEXT {
     static let customIWTitle = "Custom Info Window"
     static let customIWSubtitle = "Learn how to create a custom info window"
 
+    static let customUserLocationTitle = "User Location & Tracking Modes"
+    static let customUserLocationSubtitle = "Custom user location icon"
+
+    static let markerRotationTitle = "Marker Rotation"
+    static let markerRotationSubtitle = "Learn how to rotate annotation views smoothly"
+
     static let reset = "RESET"
 }
 
@@ -58,6 +64,9 @@ struct IDENTIFIER {
     static let dynamicMarkerController = "DynamicMarkerViewController"
     static let cameraAnimationController = "CameraAnimationViewController"
     static let customInfoController = "CustomInfoViewController"
+    static let customULController = "CustomULViewController"
+    static let markerRotationController = "MarkerRotationViewController"
+    static let trackingModeController = "TrackingModesViewController"
 }
 
 struct STORYBOARD {
@@ -73,7 +82,7 @@ struct COLOR {
 }
 
 struct FLIGHTMAP {
-    static let dummyToken = "2e769c60-174c-11ea-acdf-896965e04014"
-    static let lightTheme = URL(string: "https://maps.flightmap.io/styles//style-bright.json")
+    static let homePage = URL(string: "https://app.flightmap.io")
+    static let lightTheme = URL(string: "https://maps.flightmap.io/styles//default.json")
     static let darkTheme = URL(string: "https://maps.flightmap.io/styles//style-dark.json")
 }

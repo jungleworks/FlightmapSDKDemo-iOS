@@ -31,7 +31,6 @@ class TapMarkerViewController: UIViewController {
 
     private func setupMapView() {
         /// Initialize mapview with along with frame and style URL
-        MGLAccountManager.accessToken = FLIGHTMAP.dummyToken
         mapView = MGLMapView(frame: self.view.bounds, styleURL: FLIGHTMAP.lightTheme)
 
         /// Set camera at a specific lat long along with zoom and animation
@@ -41,6 +40,7 @@ class TapMarkerViewController: UIViewController {
         mapView?.setCenter(center, zoomLevel: 13.0, direction: 0, animated: false)
         self.view.addSubview(mapView!)
 
+        /// Adding single tap gesture to the mapView
         let singleTap = UITapGestureRecognizer(target: self, action: #selector(handleMapTap(sender:)))
         for recognizer in mapView.gestureRecognizers! where recognizer is UITapGestureRecognizer {
         singleTap.require(toFail: recognizer)
@@ -48,7 +48,10 @@ class TapMarkerViewController: UIViewController {
         mapView.addGestureRecognizer(singleTap)
     }
 
+
     @objc func handleMapTap(sender: UITapGestureRecognizer) {
+
+        /// Converting CGPoint to CLLocationCoordinate2D
         let tapPoint: CGPoint = sender.location(in: mapView)
         let tapCoordinate: CLLocationCoordinate2D = mapView.convert(tapPoint, toCoordinateFrom: nil)
         print("You tapped at: \(tapCoordinate.latitude), \(tapCoordinate.longitude)")

@@ -22,6 +22,7 @@ enum RowData {
     case polygon
     case polyline
     case tapForMarker
+    case rotateMarker
 
     /// Camera
     case animationTypes
@@ -31,53 +32,64 @@ enum RowData {
     case standardInfoWindow
     case customInfoWindow
 
+    /// User Location
+    case customUserLocation
+
     func getTitle() -> String {
         switch self {
-            case .simpleMap:
-                return TEXT.simpleMapTitle
-            case .bulkMarker:
-                return TEXT.bulkMarkerTitle
-            case .dynamicMarker:
-                return TEXT.dynamicMarkerTitle
-            case .polygon:
-                return TEXT.polygonTitle
-            case .polyline:
-                return TEXT.polylineTitle
-            case .tapForMarker:
-                return TEXT.tapMarkerTitle
-            case .animationTypes:
-                return TEXT.animationTypesTitle
-            case .cameraPostion:
-                return TEXT.cameraPositionTitle
-            case .standardInfoWindow:
-                return TEXT.standardIWTitle
-            case .customInfoWindow:
-                return TEXT.customIWTitle
+        case .simpleMap:
+            return TEXT.simpleMapTitle
+        case .bulkMarker:
+            return TEXT.bulkMarkerTitle
+        case .dynamicMarker:
+            return TEXT.dynamicMarkerTitle
+        case .polygon:
+            return TEXT.polygonTitle
+        case .polyline:
+            return TEXT.polylineTitle
+        case .tapForMarker:
+            return TEXT.tapMarkerTitle
+        case .animationTypes:
+            return TEXT.animationTypesTitle
+        case .cameraPostion:
+            return TEXT.cameraPositionTitle
+        case .standardInfoWindow:
+            return TEXT.standardIWTitle
+        case .customInfoWindow:
+            return TEXT.customIWTitle
+        case .customUserLocation:
+            return TEXT.customUserLocationTitle
+        case .rotateMarker:
+            return TEXT.markerRotationTitle
         }
     }
 
     func getSubtitle() -> String {
         switch self {
-            case .simpleMap:
-                return TEXT.simpleMapSubtitle
-            case .bulkMarker:
-                return TEXT.bulkMarkerSubtitle
-            case .dynamicMarker:
-                return TEXT.dynamicMarkerSubtitle
-            case .polygon:
-                return TEXT.polygonSubtitle
-            case .polyline:
-                return TEXT.polygonSubtitle
-            case .tapForMarker:
-                return TEXT.tapMarkerSubtitle
-            case .animationTypes:
-                return TEXT.animationTypesSubtitle
-            case .cameraPostion:
-                return TEXT.cameraPostionSubtitle
-            case .standardInfoWindow:
-                return TEXT.standardIWSubtitle
-            case .customInfoWindow:
-                return TEXT.customIWSubtitle
+        case .simpleMap:
+            return TEXT.simpleMapSubtitle
+        case .bulkMarker:
+            return TEXT.bulkMarkerSubtitle
+        case .dynamicMarker:
+            return TEXT.dynamicMarkerSubtitle
+        case .polygon:
+            return TEXT.polygonSubtitle
+        case .polyline:
+            return TEXT.polygonSubtitle
+        case .tapForMarker:
+            return TEXT.tapMarkerSubtitle
+        case .animationTypes:
+            return TEXT.animationTypesSubtitle
+        case .cameraPostion:
+            return TEXT.cameraPostionSubtitle
+        case .standardInfoWindow:
+            return TEXT.standardIWSubtitle
+        case .customInfoWindow:
+            return TEXT.customIWSubtitle
+        case .customUserLocation:
+            return TEXT.customUserLocationSubtitle
+        case .rotateMarker:
+            return TEXT.markerRotationSubtitle
         }
     }
 }
@@ -87,18 +99,20 @@ enum SectionType: String {
     case annotation = "Annotations"
     case camera = "Camera"
     case infoWindow = "Info Window"
+    case userLocation = "Location"
 }
 
 class HomeViewPresenter: HomeViewDelegate {
 
     // MARK: Properties
     private weak var homeView: HomeViewDelegate?
-    var sections: [SectionType] = [.basic, .annotation, .camera, .infoWindow]
+    var sections: [SectionType] = [.basic, .annotation, .camera, .infoWindow, .userLocation]
     var sectionData: [SectionType: [RowData]] = [
         SectionType.basic: [.simpleMap],
-        SectionType.annotation: [.bulkMarker, .dynamicMarker, .polygon, .polyline, .tapForMarker],
+        SectionType.annotation: [.bulkMarker, .dynamicMarker, .polygon, .polyline, .tapForMarker, .rotateMarker],
         SectionType.camera: [.animationTypes/*, .cameraPostion*/],
-        SectionType.infoWindow: [.standardInfoWindow, .customInfoWindow]]
+        SectionType.infoWindow: [.standardInfoWindow, .customInfoWindow],
+        SectionType.userLocation: [.customUserLocation]]
 
 
     // MARK: Initializer
@@ -125,6 +139,8 @@ class HomeViewPresenter: HomeViewDelegate {
             return sectionData[.camera]?.count ?? 0
         case .infoWindow:
             return sectionData[.infoWindow]?.count ?? 0
+        case .userLocation:
+            return sectionData[.userLocation]?.count ?? 0
 
         }
     }
@@ -151,7 +167,14 @@ class HomeViewPresenter: HomeViewDelegate {
                 let rowData = section[index.row]
                 return HomeCellModel(title: rowData.getTitle(), subtitle: rowData.getSubtitle())
             }
+        case .userLocation:
+            if let section = sectionData[.userLocation] {
+                let rowData = section[index.row]
+                return HomeCellModel(title: rowData.getTitle(), subtitle: rowData.getSubtitle())
+            }
         }
+
+
 
         return HomeCellModel(title: "Empty", subtitle: "Empty")
     }

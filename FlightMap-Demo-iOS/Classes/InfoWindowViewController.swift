@@ -26,7 +26,6 @@ class InfoWindowViewController: UIViewController {
 
     private func setupMapView() {
         /// Initialize mapview with along with frame and style URL
-        MGLAccountManager.accessToken = FLIGHTMAP.dummyToken
         mapView = MGLMapView(frame: self.view.bounds, styleURL: FLIGHTMAP.lightTheme)
 
         /// Set camera at a specific lat long along with zoom and animation
@@ -54,6 +53,7 @@ extension InfoWindowViewController: MGLMapViewDelegate {
         return true
     }
 
+    /// Default accessory view(left) for callouts view
     func mapView(_ mapView: MGLMapView, leftCalloutAccessoryViewFor annotation: MGLAnnotation) -> UIView? {
         if (annotation.title! == "Default Title") {
             /// Callout height is fixed; width expands to fit its content.
@@ -68,12 +68,14 @@ extension InfoWindowViewController: MGLMapViewDelegate {
         return nil
     }
 
+    /// Default accessory view(right) for callouts view
     func mapView(_ mapView: MGLMapView, rightCalloutAccessoryViewFor annotation: MGLAnnotation) -> UIView? {
         let button = UIButton(type: .infoDark)
         button.tintColor = .black
         return button
     }
 
+    /// Tap action for accessory callout view
     func mapView(_ mapView: MGLMapView, annotation: MGLAnnotation, calloutAccessoryControlTapped control: UIControl) {
     /// Hide the callout view.
     mapView.deselectAnnotation(annotation, animated: false)

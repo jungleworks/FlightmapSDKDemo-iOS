@@ -104,6 +104,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 self.pushTo(id: IDENTIFIER.polylineController)
             case .tapForMarker:
                 self.pushTo(id: IDENTIFIER.tapMarkerController)
+            case .rotateMarker:
+                self.pushTo(id: IDENTIFIER.markerRotationController)
 
             /// Camera
             case .cameraPostion:
@@ -116,6 +118,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 self.pushTo(id: IDENTIFIER.infoWindowController)
             case .customInfoWindow:
                 self.pushTo(id: IDENTIFIER.customInfoController)
+
+            /// User Location
+            case .customUserLocation:
+                self.pushTo(id: IDENTIFIER.trackingModeController)
             }
         }
 

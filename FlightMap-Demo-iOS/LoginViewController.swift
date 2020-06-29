@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Mapbox
 
 class LoginViewController: UIViewController {
 
@@ -38,7 +39,7 @@ class LoginViewController: UIViewController {
 
     /// Check access token validity
     private func isAccessTokenValid() -> Bool {
-        return true
+        return !tokenTextField.text!.isEmpty
     }
 
     private func pushToHome() {
@@ -51,6 +52,7 @@ class LoginViewController: UIViewController {
     // MARK: Action
     @IBAction func loginAction(_ sender: Any) {
         if self.isAccessTokenValid() {
+            MGLAccountManager.accessToken = tokenTextField.text
             self.pushToHome()
         } else {
             /// Show alert for invalid token
@@ -58,6 +60,8 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func getAccessToken(_ sender: Any) {
-
+        if let url = FLIGHTMAP.homePage {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
 }

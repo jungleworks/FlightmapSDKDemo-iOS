@@ -375,6 +375,73 @@
             </objects>
             <point key="canvasLocation" x="9620" y="125"/>
         </scene>
+        <!--CustomUL View Controller-->
+        <scene sceneID="gS2-RG-p1x">
+            <objects>
+                <viewController storyboardIdentifier="CustomULViewController" id="18s-S0-PRl" customClass="CustomULViewController" customModule="FlightMap_Demo_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="peU-3Q-SXp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="jb2-Ya-Ubk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4QK-RY-Umx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10282" y="130"/>
+        </scene>
+        <!--Marker Rotation View Controller-->
+        <scene sceneID="SXo-lo-7xg">
+            <objects>
+                <viewController storyboardIdentifier="MarkerRotationViewController" id="ZT7-Qw-yam" customClass="MarkerRotationViewController" customModule="FlightMap_Demo_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yak-R6-jhh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bT-Q2-JJZ">
+                                <rect key="frame" x="0.0" y="686" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.1305986941" green="0.54523593189999997" blue="0.70245331529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pz3-ay-AMQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <state key="normal" title="Rotate Marker"/>
+                                <connections>
+                                    <action selector="rotateMarker:" destination="ZT7-Qw-yam" eventType="touchUpInside" id="n1t-bc-Jk7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pLp-1t-fvn" firstAttribute="trailing" secondItem="5bT-Q2-JJZ" secondAttribute="trailing" id="GJZ-fv-ABY"/>
+                            <constraint firstItem="5bT-Q2-JJZ" firstAttribute="leading" secondItem="pLp-1t-fvn" secondAttribute="leading" id="a64-MT-hPc"/>
+                            <constraint firstItem="pLp-1t-fvn" firstAttribute="bottom" secondItem="5bT-Q2-JJZ" secondAttribute="bottom" id="w6R-WM-6aG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pLp-1t-fvn"/>
+                    </view>
+                    <connections>
+                        <outlet property="markerRotationButton" destination="5bT-Q2-JJZ" id="Teo-1A-9gf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eA5-e1-Ik5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10946" y="125"/>
+        </scene>
+        <!--Tracking Modes View Controller-->
+        <scene sceneID="eHi-uG-rt9">
+            <objects>
+                <viewController storyboardIdentifier="TrackingModesViewController" id="PmK-eQ-eda" customClass="TrackingModesViewController" customModule="FlightMap_Demo_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x1m-G8-Rpo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="N5h-RJ-F1U"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ej2-cv-Xvi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11677" y="117"/>
+        </scene>
     </scenes>
     <resources>
         <image name="splashBackground" width="375" height="666"/>

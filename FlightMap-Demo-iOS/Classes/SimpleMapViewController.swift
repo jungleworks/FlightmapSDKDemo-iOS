@@ -26,7 +26,6 @@ class SimpleMapViewController: UIViewController {
 
     private func setupMapView() {
         /// Initialize mapview with along with frame and style URL
-        MGLAccountManager.accessToken = FLIGHTMAP.dummyToken
         mapView = MGLMapView(frame: self.view.bounds, styleURL: FLIGHTMAP.lightTheme)
 
         /// Set camera at a specific lat long along with zoom and animation
@@ -41,6 +40,8 @@ class SimpleMapViewController: UIViewController {
 }
 
 extension SimpleMapViewController: MGLMapViewDelegate {
+
+    /// Callback for when the mapview has finished loading tiles
     func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
     // Wait for the map to load before initiating the first camera movement.
 

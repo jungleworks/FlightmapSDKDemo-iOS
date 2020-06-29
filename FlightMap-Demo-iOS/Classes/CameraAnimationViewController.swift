@@ -37,7 +37,6 @@ class CameraAnimationViewController: UIViewController {
 
     private func setupMapView() {
         /// Initialize mapview with along with frame and style URL
-        MGLAccountManager.accessToken = FLIGHTMAP.dummyToken
         flightMapView = MGLMapView(frame: self.mapView.bounds, styleURL: FLIGHTMAP.lightTheme)
 
         /// Set camera at a specific lat long along with zoom and animation
@@ -65,7 +64,5 @@ class CameraAnimationViewController: UIViewController {
 }
 
 extension CameraAnimationViewController: MGLMapViewDelegate {
-    func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
 
-    }
 }
