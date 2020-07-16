@@ -12,8 +12,8 @@ In order to embed flightmap dependency into your project, 2 frameworks (Mapbox.f
 # Features
 
 ## Simple map 
-Simply load a MGLMapView with a custom style URL along with smooth animation.
-Reference Controller - SimpleMapViewController.swift
+### Simply load a MGLMapView with a custom style URL along with smooth animation.<br/>
+### Reference Controller - SimpleMapViewController.swift
 
 ## Bulk Annotations
 ### Load annotations in bulk and add them to the map via a geojson file.<br/>
@@ -43,7 +43,7 @@ Reference Controller - SimpleMapViewController.swift
 ## Marker Rotation
 ### Rotate an annotation image smoothly by providing the degree/radians for rotation.<br/>
 ### Reference Controller - MarkerRotationViewController.swift<br/>
-![Optional Text](../master/example/rotation.gif)
+![Optional Text](../master/example/rotate.gif)
 
 ## Animation Types
 ### Different type of camera animations that are available.<br/>
