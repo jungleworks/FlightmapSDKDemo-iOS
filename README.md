@@ -26,7 +26,7 @@ In order to embed flightmap dependency into your project, 2 frameworks (Mapbox.f
 ![Optional Text](../master/example/position.gif)
 
 ## Polygon
-### Add a polygon to the map.<br/>
+### Add a polygon to the map.<br/>
 ### Reference Controller - PolygonViewController.swift<br/>
 ![Optional Text](../master/example/polygon.png)
 
