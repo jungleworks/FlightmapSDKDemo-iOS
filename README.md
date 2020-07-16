@@ -50,6 +50,3 @@ Reference Controllers - InfoWindowViewController.swift, CustomInfoViewController
 ## User Location & Tracking Modes
 Show current location, add custom current location views and change user tracking modes.
 Refernce Controllers - TrackingModesViewController.swift
-
-
-
