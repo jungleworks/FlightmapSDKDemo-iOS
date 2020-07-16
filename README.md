@@ -16,6 +16,7 @@ Simply load a MGLMapView with a custom style URL along with smooth animation.
 Reference Controller - SimpleMapViewController.swift
 
 ## Bulk Annotations
+![Optional Text](../master/example/bulk.png)
 Load annotations in bulk and add them to the map via a geojson file.
 Reference Controller - GeoJsonViewController.swift
 
