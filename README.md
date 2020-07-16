@@ -16,38 +16,46 @@ Simply load a MGLMapView with a custom style URL along with smooth animation.
 Reference Controller - SimpleMapViewController.swift
 
 ## Bulk Annotations
-![Optional Text](../master/example/bulk.png)
-Load annotations in bulk and add them to the map via a geojson file.
+![Optional Text](../master/example/bulk.png)<br/>
+Load annotations in bulk and add them to the map via a geojson file.<br/>
 Reference Controller - GeoJsonViewController.swift
 
 ## Dynamic Markers
-Update the position of a MGLPointAnnotation with the tap of a button.
+![Optional Text](../master/example/position.gif)<br/>
+Update the position of a MGLPointAnnotation with the tap of a button.<br/>
 Reference Controller - DynamicMarkerViewController.swift
 
 ## Polygon
-Add a polygon to the map.
+![Optional Text](../master/example/polygon.png)<br/>
+Add a polygon to the map.<br/>
 Reference Controller - PolygonViewController.swift
 
-## Polyline 
-Add a polyline to the map.
+## Polyline
+![Optional Text](../master/example/polyline.png)<br/>
+Add a polyline to the map.<br/>
 Reference Controller - PolylineViewController.swift
 
 ## Tap to add annotation
-Add annotation to the map by tapping onto a coordinate
+![Optional Text](../master/example/tap.gif)<br/>
+Add annotation to the map by tapping onto a coordinate.<br/>
 Reference Controller - TapMarkerViewController.swift
 
 ## Marker Rotation
-Rotate an annotation image smoothly by providing the degree/radians for rotation.
+![Optional Text](../master/example/rotation.gif)<br/>
+Rotate an annotation image smoothly by providing the degree/radians for rotation.<br/>
 Reference Controller - MarkerRotationViewController.swift
 
 ## Animation Types
-Different type of camera animations that are available.
+![Optional Text](../master/example/animation.gif)<br/>
+Different type of camera animations that are available.<br/>
 Reference Controller - CameraAnimationViewController.swift
 
 ## Info Window
-Display standard or custom info view with just a tap.
+![Optional Text](../master/example/standardInfo.gif)<br/>
+Display standard or custom info view with just a tap.<br/>
 Reference Controllers - InfoWindowViewController.swift, CustomInfoViewController.swift
 
 ## User Location & Tracking Modes
-Show current location, add custom current location views and change user tracking modes.
+![Optional Text](../master/example/userTracking.gif)<br/>
+Show current location, add custom current location views and change user tracking modes.<br/>
 Refernce Controllers - TrackingModesViewController.swift
