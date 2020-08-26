@@ -1,7 +1,7 @@
 # Flightmap-DemoApp
 A Flightmap demo application which implements important features of the Flightmap SDK, A framework for embedding interactive map views with scalable, customizable vector maps into Cocoa Touch applications on iOS 9.0 and above using Objective-C, Swift, or Interface Builder
 
-# Dependencies
+# Installation
 
 ## Framework Files
 In order to embed flightmap dependency into your project, 2 frameworks (Mapbox.framework and MapboxMobileEvents.framework) will be required and can be downloaded from (https://drive.google.com/open?id=1aiEpFkxqCY_Q-89o-Xhgo7wdKHVxepcf)
